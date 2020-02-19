@@ -1,0 +1,11 @@
+function sequence(num1, num2) {
+  let result = [];
+  for (let i = 1; i < num1; i += 1) {
+    result.push(i * num2);
+  }
+  return result;
+}
+console.log(sequence(5, 1));          // [1, 2, 3, 4, 5]
+console.log(sequence(4, -7));         // [-7, -14, -21, -28]
+console.log(sequence(3, 0));          // [0, 0, 0]
+console.log(sequence(0, 1000000));    // []
